@@ -20,7 +20,7 @@ label_map = {
 }
 
 st.title("📰 News Classifier")
-
+st.text("Categories: World/Political News, Sports News, Business News, and Sci/Tech News")
 text = st.text_area("Enter news text:")
 
 if st.button("Predict"):
@@ -30,3 +30,5 @@ if st.button("Predict"):
         st.success(f"Prediction: {label_map[pred]}")
     else:
         st.warning("Please enter text")
+
+st.text("Made by Yahya Ahmed")
